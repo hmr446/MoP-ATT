@@ -25,13 +25,13 @@ Features
 
 Known Issues:
 ------------
-- Lots of missing spells in the config menu, *this part is mostly **manual data entry,** so please help!*
-- Some spell data may be incorrect, I.E CD times, or charges on spells that should or shouldnt have them.
+- --Lots of missing spells in the config menu, *this part is mostly **manual data entry,** so please help!*--its over now
+- Some spell data may be incorrect, I.E CD times, or charges on spells that should or shouldnt have them.--its over now
 - Glow effect is rough, switching to different library... Eventually.
 - Initial login doesnt populate icons when set to No Anchor. Changing *anything* in the options menu, reloading UI or joining a group will fix this.
-- Trinket support is not quite ready.
+- Trinket support is not quite ready.--you can self added spellid：42292
 - Glyph support soon.
 - Desaturate for spells with charges non-functional. Will add option to disable desaturation.
 - Disabling borders requires a reload.
-- Unable to change font for timer.
+- Unable to change font for timer.--ATT\libs\compat 116line maybe can change（i guess）
 - Untested in PvP with functions such as Dampening %
