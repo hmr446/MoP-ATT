@@ -1055,7 +1055,8 @@ function ATT:TrackCooldown(anchor, ability, SentID, unit, guid, flag)
         if icon.inUse and icon.cooldown then
             -- Direct cooldown
             if icon.ability and icon.abilityID == SentID and icon.inUse then
-                if flag then icon.cd:Clear() icon.texture:SetVertexColor(0.4, 0.4, 0.4) break end
+                if flag and icon.cd then
+                    icon.cd:Hide() icon.texture:SetVertexColor(0.4, 0.4, 0.4) break end
                 icon.seen = true
                 icon.Start(icon.cooldown, 1, rate)
             end
