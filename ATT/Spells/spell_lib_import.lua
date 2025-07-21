@@ -243,7 +243,7 @@ ATTdbs.dbImport = {
             {["ability"] = 102560, ["cooldown"] = 180},
             {["ability"] = 2782, ["cooldown"] = 8},
             {["ability"] = 106898, ["cooldown"] = 120},
-            {["ability"] = 132469, ["cooldown"] = 30},
+            {["ability"] = 61391, ["cooldown"] = 30,},	
 
         },
         ["103"] = {
@@ -288,6 +288,7 @@ ATTdbs.dbImport = {
         },
         ["105"] = {
             --- Restoration 105
+            {["ability"] = 61391, ["cooldown"] = 30,},			 
             {["ability"] = 1850, ["cooldown"] = 180},
             {["ability"] = 5211, ["cooldown"] = 50},
             {["ability"] = 20484, ["cooldown"] = 600},
@@ -1241,7 +1242,7 @@ ATTdbs.talents = {
         [6] = 102351,
         [7] = 106707,
         [8] = 102359,
-        [9] = 132469,
+        [9] = 61391,
         [10] = 114107,
         [11] = 106731,
         [12] = 106737,
