@@ -90,9 +90,9 @@ function CooldownFrame_Cooldown_OnUpdate(self, elapsed)
 			self.nextUpdate = nextUpdate
 		end
 		local style = TimeFormats[id]
-		if style then
+	if style then
 			local which = (self.textColors and 2 or 1) + (self.showSeconds and 0 or 2)
-			self.text:SetFormattedText(style[which], value, remainder)
+			--self.text:SetFormattedText(style[which], value, remainder)
 		end
 		local color = TimeColors[id]
 		if self.endTime - now > 3 then self.text:SetTextColor(.86, .86, .86) 
@@ -124,7 +124,7 @@ end
 
 function CooldownFrame_Cooldown_ForceUpdate(cd)
 	CooldownFrame_Cooldown_OnUpdate(cd, -1)
-	cd:Show()
+	cd:Hide()
 end
 
 function CooldownFrame_StopTimer(cd)

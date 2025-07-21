@@ -1563,7 +1563,7 @@ end
 function ATT:CHAT_MSG_BG_SYSTEM_NEUTRAL(text)
     if not ATTIcons:IsShown() or not text then return end
     local _, instanceType = IsInInstance()
-    if (instanceType == "arena" or (instanceType == "pvp" and C_PvP.GetActiveMatchDuration() < 5)) and (string.find(text, "!")) then
+    if (instanceType == "arena" or instanceType == "pvp") and (string.find(text, "!$")) then
         self:InspectPlayer()
         self:SendCovenant(PlayerGUID);
         self:UpdateGroup()
